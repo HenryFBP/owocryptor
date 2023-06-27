@@ -1,10 +1,15 @@
-all: setup test exebuild
+all: setup tests
+
+tests: test exebuild testexebuild
 
 setup:
 	poetry install
 
 exebuild:
-	poetry run pyinstaller --onefile owocryptor.py
+	poetry run pyinstaller owocryptor.spec
+
+testexebuild:
+	./dist/owocryptor --test
 
 run:
 	poetry run python3 owocryptor.py

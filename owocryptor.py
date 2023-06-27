@@ -7,7 +7,15 @@ from cryptography.fernet import Fernet
 This program will copy "sampledata" to the "~/encryption-test/sampledata", recursively encrypt all files in the "sampledata" directory, and delete the original "sampledata" directory.
 '''
 
+import sys
+if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+    print('running in a PyInstaller bundle')
+else:
+    print('running in a normal Python process')
+
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+print(THIS_DIR)
+print(os.listdir(THIS_DIR))
 
 ENC_FILE_EXT=".owocryptor-enc"
 
@@ -143,7 +151,7 @@ if __name__ == "__main__":
             copy_sampledata_to_dest()
 
         encrypt_folder_recursively(SAMPLE_DATA_DEST_PATH)
-        exit(0)
+        sys.exit(0)
 
     if args.encryptpath:
         encrypt_path = args.encryptpath

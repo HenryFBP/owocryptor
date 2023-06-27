@@ -8,7 +8,7 @@ a = Analysis(
     ['owocryptor.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('./sampledata', 'sampledata')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

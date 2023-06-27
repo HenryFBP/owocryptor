@@ -4,6 +4,18 @@ This is a program that encrypts files within folders!
 
 Name courtesy of https://github.com/jcollins17 :)
 
+## Usage
+
+```
+usage: owocryptor.exe [-h] [--test] [--encryptpath ENCRYPTPATH] [--decryptpath DECRYPTPATH]
+
+options:
+  -h, --help            show this help message and exit
+  --test
+  --encryptpath ENCRYPTPATH
+  --decryptpath DECRYPTPATH
+```
+
 ## Running
 
 ### Test
