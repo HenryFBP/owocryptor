@@ -9,7 +9,7 @@ This program will copy "sampledata" to the "~/encryption-test/sampledata", recur
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
-ENC_FILE_EXT=".enc-henryfbp"
+ENC_FILE_EXT=".owocryptor-enc"
 
 SAMPLE_DATA_DEST_PATH = os.path.expanduser("~/encryption-test/sampledata")
 

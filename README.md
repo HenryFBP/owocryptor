@@ -1,4 +1,8 @@
-# Encryption Program
+# owocryptor
+
+This is a program that encrypts files within folders!
+
+Name courtesy of https://github.com/jcollins17 :)
 
 ## Running
 
