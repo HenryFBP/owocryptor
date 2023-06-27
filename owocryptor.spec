@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['encrypt_desktop_files.py'],
+    ['owocryptor.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='encrypt_desktop_files',
+    name='owocryptor',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
